@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GitBash</title>
+	<!-- Подключение стилей -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="fnaw/fontawesome/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+	<!-- Конец подключения стилей -->
+</head>
+<body>
+	<main class="main">
+		<nav class="navbar">
+			<div class="nav-inner">
+				<a href="#" class="logo">
+					<img src="img/logo..svg" alt="logo">
+				</a>
+				<ul class="navbar-list">
+					<li class="navbar__item">
+						<a class="navbar-link" href="#"><i class="fas fa-home"></i></a>
+					</li>
+					<li class="navbar__item add" id="add-cours">
+						<a class="navbar-link" href="#"><i class="fas fa-graduation-cap"></i></a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar-link" href="#"><i class="far fa-user"></i></a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar-link" href="#"><i class="far fa-envelope"></i></a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar-link" href="#"><i class="fas fa-cog"></i></a>
+					</li>
+				</ul>
+				<button class="exit" id="exit">
+					<i class="fas fa-sign-out-alt"></i>
+				</button>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="main-wrapper">
+				<div class="wrapper-left">
+					<div class="courses">
+						<div class="wrapper banner">
+							<div class="banner-text">
+								<h3 class="banner-title">Hello Josh!</h3>
+								<p class="banner-descr">It’s good to see you again.</p>
+							</div>
+						</div>
+						<div class="swiper swiper-1">
+							<ul class="swiper-warpper">
+								<li class="swiper-slide wrapper">
+									<div class="logo-card">
+										<img class="card-img" src="img/Alipay.svg" alt="img">
+									</div>
+									<div class="card-title__card">
+										<h4 class="name_">
+											Spanish B2
+										</h4>
+										<p class="card-descr">by Alejandro Velazquez</p>
+									</div>
+									<div class="card-graph">
+										83
+									</div>
+									<button class="card-button">
+										Continue
+									</button>
+								</li>
+								<li class="swiper-slide wrapper">
+									<div class="logo-card">
+										<img class="card-img" src="img/Alipay.svg" alt="img">
+									</div>
+									<div class="card-title">
+										<h4 class="card-name">
+											Spanish B2
+										</h4>
+										<p class="card-descr">by Alejandro Velazquez</p>
+									</div>
+									<div class="card-graph">
+										83
+									</div>
+									<button class="card-button">
+										Continue
+									</button>
+								</li>
+							</ul>
+							<div class="swiper-navigation-btn">
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+						</div>
+						<div class="courses-tabs">
+							<div class="courses-heading">
+								<h4 class="courses-title">
+									Courses
+								</h4>
+								<ul class="courses-tabs__list">
+									<li class="courses-tabs__li">
+										<a class="courses-tabs__link link-active" data-tabs-path="All" href="#">All Courses</a>
+									</li>
+									<li class="courses-tabs__li">
+										<a class="courses-tabs__link" data-tabs-path="New" href="#">The Newest</a>
+									</li>
+									<li class="courses-tabs__li">
+										<a class="courses-tabs__link" data-tabs-path="Rated" href="#">Top Rated</a>
+									</li>
+									<li class="courses-tabs__li">
+										<a class="courses-tabs__link" data-tabs-path="Popular" href="#">Most Popular</a>
+									</li>
+								</ul>
+							</div>
+							<div class="courses-tabs__content courses-tabs__conten___active" data-tabs-target="All">
+								<ul class="courses-list">
+									<!-- <li class="courses-item wrapper">
+										<div class="logo-card">
+											<img class="card-img img__" src="img/figma.svg" alt="img">
+										</div>
+										<div class="card-title__card">
+											<h4 class="card-name name__">
+												Learn Figma
+											</h4>
+											<p class="card-descr">by Christopher Morgan</p>
+										</div>
+										<div class="card-time">
+											6h 30min
+										</div>
+										<div class="card-state">
+											4,9
+										</div>
+										<button class="card-button">
+											View course
+										</button>
+									</li>
+									<li class="courses-item wrapper">
+										<div class="logo-card">
+											<img class="card-img" src="img/cams.svg" alt="img">
+										</div>
+										<div class="card-title__card">
+											<h4 class="card-name">
+												Analog photography
+											</h4>
+											<p class="card-descr">by Gordon Norman</p>
+										</div>
+										<div class="card-time">
+											3h 15min
+										</div>
+										<div class="card-state">
+											4,7
+										</div>
+										<button class="card-button">
+											View course
+										</button>
+									</li>
+									<li class="courses-item wrapper">
+										<div class="logo-card">
+											<img class="card-img" src="img/cams.svg" alt="img">
+										</div>
+										<div class="card-title__card">
+											<h4 class="card-name">
+												Master Instagram
+											</h4>
+											<p class="card-descr">by Sophie Gill</p>
+										</div>
+										<div class="card-time">
+											7h 40min
+										</div>
+										<div class="card-state">
+											4,6
+										</div>
+										<button class="card-button">
+											View course
+										</button>
+									</li>
+									<li class="courses-item wrapper">
+										<div class="logo-card">
+											<img class="card-img" src="img/pen.svg" alt="img">
+										</div>
+										<div class="card-title__card">
+											<h4 class="card-name">
+												Basics of drawing
+											</h4>
+											<p class="card-descr">by Jean Tate</p>
+										</div>
+										<div class="card-time">
+											11h 30min
+										</div>
+										<div class="card-state">
+											4,8
+										</div>
+										<button class="card-button">
+											View course
+										</button>
+									</li>
+									<li class="courses-item wrapper">
+										<div class="logo-card">
+											<img class="card-img" src="img/photoshop.svg" alt="img">
+										</div>
+										<div class="card-title__card">
+											<h4 class="card-name">
+												Photoshop - Essence
+											</h4>
+											<p class="card-descr">by David Green</p>
+										</div>
+										<div class="card-time">
+											5h 35min
+										</div>
+										<div class="card-state">
+											4,7
+										</div>
+										<button class="card-button">
+											View course
+										</button>
+									</li>
+									<li class="courses-item wrapper">
+										<div class="logo-card">
+											<img class="card-img" src="img/photoshop.svg" alt="img">
+										</div>
+										<div class="card-title__card">
+											<h4 class="card-name">
+												Photoshop - Essence
+											</h4>
+											<p class="card-descr">by David Green</p>
+										</div>
+										<div class="card-time">
+											5h 35min
+										</div>
+										<div class="card-state">
+											4,7
+										</div>
+										<button class="card-button">
+											View course
+										</button>
+									</li>
+									<li class="courses-item wrapper">
+										<div class="logo-card">
+											<img class="card-img" src="img/photoshop.svg" alt="img">
+										</div>
+										<div class="card-title__card">
+											<h4 class="card-name">
+												Photoshop - Essence
+											</h4>
+											<p class="card-descr">by David Green</p>
+										</div>
+										<div class="card-time">
+											5h 35min
+										</div>
+										<div class="card-state">
+											4,7
+										</div>
+										<button class="card-button">
+											View course
+										</button>
+									</li>
+									<li class="courses-item wrapper">
+										<div class="logo-card">
+											<img class="card-img" src="img/photoshop.svg" alt="img">
+										</div>
+										<div class="card-title__card">
+											<h4 class="card-name">
+												Photoshop - Essence
+											</h4>
+											<p class="card-descr">by David Green</p>
+										</div>
+										<div class="card-time">
+											5h 35min
+										</div>
+										<div class="card-state">
+											4,7
+										</div>
+										<button class="card-button">
+											View course
+										</button>
+									</li>
+									<li class="courses-item wrapper">
+										<div class="logo-card">
+											<img class="card-img" src="img/photoshop.svg" alt="img">
+										</div>
+										<div class="card-title__card">
+											<h4 class="card-name">
+												Photoshop - Essence
+											</h4>
+											<p class="card-descr">by David Green</p>
+										</div>
+										<div class="card-time">
+											5h 35min
+										</div>
+										<div class="card-state">
+											4,7
+										</div>
+										<button class="card-button">
+											View course
+										</button>
+									</li>
+									<li class="courses-item wrapper">
+										<div class="logo-card">
+											<img class="card-img" src="img/photoshop.svg" alt="img">
+										</div>
+										<div class="card-title__card">
+											<h4 class="card-name">
+												Photoshop - Essence
+											</h4>
+											<p class="card-descr">by David Green</p>
+										</div>
+										<div class="card-time">
+											5h 35min
+										</div>
+										<div class="card-state">
+											4,7
+										</div>
+										<button class="card-button">
+											View course
+										</button>
+									</li> -->
+									<li class="courses-item wrapper">
+										<div class="logo-card">
+											<img class="card-img" src="img/photoshop.svg" alt="img">
+										</div>
+										<div class="card-title__card">
+											<h4 class="card-name">
+												Photoshop - Essence
+											</h4>
+											<p class="card-descr">by David Green</p>
+										</div>
+										<div class="card-time">
+											5h 35min
+										</div>
+										<div class="card-state">
+											4,7
+										</div>
+										<button class="card-button">
+											View course
+										</button>
+									</li>
+								</ul>
+							</div>
+							<div class="courses-tabs__content" data-tabs-target="New">
+								<ul class="courses-list">
+								
+								</ul>
+							</div>
+							<div class="courses-tabs__content" data-tabs-target="Rated">
+								<div class="blokc">
+									<div class="title"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wrappper-right">
+
+				</div>
+			</div>
+		</div>
+	</main>
+	<div class="modal-overlay">
+		<div class="modal">
+			<form class="form" action="#" onsubmit="return false;">
+				<button class="close" id="close"></button>
+				<div class="group-input">
+					<div class="preloader-img">
+						<img src="img/icon.png" id="post_cover_previev">
+					</div>
+					<label for="file_post_cover" class="file-upload">
+						<input class="image" id="file_post_cover" name="file_post_cover" type="file">
+						 Загрузить
+					</label>
+				</div>
+				<input class="form-input name" type="text" name="cours-name" placeholder="Введите название курса">
+				<input class="form-input time" type="text" name="hours-cours" placeholder="Длительность курса">
+				<button onclick="addList(this)" class="save-dev" id="close">Выгрузить</button>
+            </form>
+		</div>
+	</div>
+	<!-- Подключение скриптов -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script  src="js/swiper.js"></script>
+	<script  src="js/main.js"></script>
+	<!-- Конец подключения скриптов -->
+</body>
+</html>
